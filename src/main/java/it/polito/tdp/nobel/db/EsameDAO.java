@@ -48,6 +48,7 @@ public class EsameDAO {
 		try {
 			Connection conn = DBConnect.getConnection();
 			PreparedStatement st = conn.prepareStatement(sql);
+			
 			st.setString(1, esame.getCodins());
 			st.setString(2, esame.getNomeCorso());
 			st.setInt(3, esame.getVoto());
